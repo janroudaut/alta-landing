@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALTA — Du scénario au storyboard 3D</title>
+  <meta name="description" content="Alta couvre l'intégralité de la chaîne de préprod animation : import scénario, dépouillement IA, storyboard 3D. Forgé par des années d'usage en studio professionnel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+<!-- ======== NAVBAR ======== -->
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="#" class="navbar-brand">ALTA</a>
+    <ul class="navbar-links">
+      <li><a href="#scenario" data-lang="fr">Scénario</a><a href="#scenario" data-lang="en">Script</a></li>
+      <li><a href="#elements" data-lang="fr">Éléments</a><a href="#elements" data-lang="en">Elements</a></li>
+      <li><a href="#storyboard">Storyboard</a></li>
+      <li><a href="#workflow" data-lang="fr">Pipeline</a><a href="#workflow" data-lang="en">Pipeline</a></li>
+      <li><a href="#tech" data-lang="fr">Technologie</a><a href="#tech" data-lang="en">Technology</a></li>
+    </ul>
+  </div>
+  <div class="navbar-right">
+    <div class="lang-toggle">
+      <button data-set-lang="fr">FR</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ======== 1. HERO ======== -->
+<section class="hero" id="hero">
+  <div class="hero-wordmark">ALTA</div>
+  <p class="hero-tagline" data-lang="fr">Du scénario au storyboard 3D, en un seul outil.</p>
+  <p class="hero-tagline" data-lang="en">From script to 3D storyboard, in a single tool.</p>
+  <p class="hero-sub-tagline" data-lang="fr">Import, dépouillement IA, composition de plans — tout ce dont votre studio a besoin pour la préprod animation.</p>
+  <p class="hero-sub-tagline" data-lang="en">Import, AI breakdown, shot composition — everything your studio needs for animation pre-production.</p>
+  <div class="hero-ctas">
+    <a href="#scenario" class="hero-cta" data-lang="fr">Découvrir les fonctionnalités</a>
+    <a href="#scenario" class="hero-cta" data-lang="en">Discover the features</a>
+    <a href="#tech" class="hero-cta hero-cta-secondary" data-lang="fr">En savoir plus</a>
+    <a href="#tech" class="hero-cta hero-cta-secondary" data-lang="en">Learn more</a>
+  </div>
+  <div class="hero-screenshot">
+    <img src="img/board.png" alt="Alta — Storyboard 3D" class="screenshot">
+  </div>
+  <div class="hero-scroll-hint">
+    <span data-lang="fr">Scroll</span>
+    <span data-lang="en">Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ======== 2. LE PROBLÈME ======== -->
+<section id="problem">
+  <div class="container">
+    <div style="text-align: center;" class="reveal">
+      <span class="section-label" data-lang="fr">Le constat</span>
+      <span class="section-label" data-lang="en">The problem</span>
+      <h2 class="section-title" data-lang="fr">La préprod animation est encore artisanale</h2>
+      <h2 class="section-title" data-lang="en">Animation pre-production is still manual</h2>
+      <p class="section-subtitle centered" data-lang="fr">Tableurs, annotations papier, allers-retours sans fin entre les outils. Des heures perdues avant même que le premier plan ne soit composé.</p>
+      <p class="section-subtitle centered" data-lang="en">Spreadsheets, paper annotations, endless back-and-forth between tools. Hours lost before the first shot is even composed.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-icon">&#128196;</div>
+        <h3 data-lang="fr">Scénarios isolés</h3>
+        <h3 data-lang="en">Isolated scripts</h3>
+        <p data-lang="fr">Les scénarios vivent dans des fichiers texte, déconnectés du reste du pipeline. Chaque modification implique des copier-coller manuels.</p>
+        <p data-lang="en">Scripts live in text files, disconnected from the rest of the pipeline. Every change means manual copy-pasting.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-icon">&#128270;</div>
+        <h3 data-lang="fr">Dépouillement à la main</h3>
+        <h3 data-lang="en">Manual breakdown</h3>
+        <p data-lang="fr">Identifier chaque personnage, décor et accessoire séquence par séquence — un travail fastidieux, répétitif, source d'oublis.</p>
+        <p data-lang="en">Identifying every character, set and prop sequence by sequence — tedious, repetitive work, prone to oversights.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-3">
+        <div class="problem-icon">&#127912;</div>
+        <h3 data-lang="fr">Storyboard en 2D</h3>
+        <h3 data-lang="en">2D storyboarding</h3>
+        <p data-lang="fr">Dessiner chaque plan à la main, sans pouvoir tester les angles de caméra ni le placement des personnages dans l'espace.</p>
+        <p data-lang="en">Drawing each shot by hand, unable to test camera angles or character placement in 3D space.</p>
+      </div>
+    </div>
+
+    <div class="problem-then-now reveal">
+      <div class="problem-then">
+        <h4 data-lang="fr">Avant</h4>
+        <h4 data-lang="en">Before</h4>
+        <ul>
+          <li data-lang="fr">3 à 5 logiciels différents</li>
+          <li data-lang="en">3 to 5 different software tools</li>
+          <li data-lang="fr">Dépouillement manuel sur tableur</li>
+          <li data-lang="en">Manual breakdown on spreadsheets</li>
+          <li data-lang="fr">Storyboards dessinés à la main</li>
+          <li data-lang="en">Hand-drawn storyboards</li>
+          <li data-lang="fr">Aucun lien entre les étapes</li>
+          <li data-lang="en">No link between steps</li>
+        </ul>
+      </div>
+      <div class="problem-arrow">&rarr;</div>
+      <div class="problem-now">
+        <h4 data-lang="fr">Avec Alta</h4>
+        <h4 data-lang="en">With Alta</h4>
+        <ul>
+          <li data-lang="fr">Un seul outil web intégré</li>
+          <li data-lang="en">One integrated web tool</li>
+          <li data-lang="fr">Dépouillement automatique par IA</li>
+          <li data-lang="en">Automatic AI-powered breakdown</li>
+          <li data-lang="fr">Composition de plans en 3D</li>
+          <li data-lang="en">3D shot composition</li>
+          <li data-lang="fr">Chaque étape alimente la suivante</li>
+          <li data-lang="en">Each step feeds the next</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 3. PROPOSITION DE VALEUR ======== -->
+<section id="value">
+  <div class="container">
+    <div style="text-align: center;" class="reveal">
+      <span class="section-label" data-lang="fr">3 piliers, 1 outil</span>
+      <span class="section-label" data-lang="en">3 pillars, 1 tool</span>
+      <h2 class="section-title" data-lang="fr">Tout le pipeline en un clic</h2>
+      <h2 class="section-title" data-lang="en">The entire pipeline in one click</h2>
+    </div>
+
+    <div class="value-grid reveal">
+      <!-- Scénario -->
+      <div class="value-card">
+        <svg class="value-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="6" width="32" height="44" rx="3" stroke="currentColor" stroke-width="2.5"/>
+          <line x1="16" y1="16" x2="32" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="16" y1="24" x2="28" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="16" y1="32" x2="30" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M40 20l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3 data-lang="fr">Import scénario</h3>
+        <h3 data-lang="en">Script import</h3>
+        <p data-lang="fr">Importez vos scénarios ODF en un clic. Le lecteur structuré en 3 colonnes fait gagner un temps précieux à l'ensemble de l'équipe.</p>
+        <p data-lang="en">Import your ODF scripts in one click. The structured 3-column reader saves valuable time for the entire team.</p>
+      </div>
+      <!-- Dépouillement -->
+      <div class="value-card">
+        <svg class="value-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="28" cy="20" r="12" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M28 32v12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="20" cy="48" r="4" stroke="currentColor" stroke-width="2"/>
+          <circle cx="28" cy="48" r="4" stroke="currentColor" stroke-width="2"/>
+          <circle cx="36" cy="48" r="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 16h12M28 12v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <h3 data-lang="fr">Dépouillement IA</h3>
+        <h3 data-lang="en">AI breakdown</h3>
+        <p data-lang="fr">L'IA analyse chaque séquence et identifie automatiquement personnages, décors, accessoires et effets spéciaux.</p>
+        <p data-lang="en">AI analyses each sequence and automatically identifies characters, sets, props, and special effects.</p>
+      </div>
+      <!-- Storyboard -->
+      <div class="value-card">
+        <svg class="value-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="48" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="20" cy="34" r="6" stroke="currentColor" stroke-width="2"/>
+          <line x1="20" y1="28" x2="20" y2="40" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="14" y1="34" x2="26" y2="34" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M36 22l6 4-6 4z" fill="currentColor"/>
+          <rect x="34" y="34" width="12" height="3" rx="1" fill="currentColor" opacity="0.5"/>
+        </svg>
+        <h3 data-lang="fr">Storyboard 3D</h3>
+        <h3 data-lang="en">3D Storyboard</h3>
+        <p data-lang="fr">Composez vos plans dans une vraie scène 3D : mannequins articulés, caméra libre, séquenceur intégré.</p>
+        <p data-lang="en">Compose your shots in a real 3D scene: articulated mannequins, free camera, built-in sequencer.</p>
+      </div>
+    </div>
+
+    <p class="value-synthesis reveal" data-lang="fr">Le seul outil qui couvre l'intégralité de la chaîne de préprod animation.</p>
+    <p class="value-synthesis reveal" data-lang="en">The only tool that covers the entire animation pre-production pipeline.</p>
+
+    <div class="stats-row reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-lang="fr">3</div>
+        <div class="stat-number" data-lang="en">3</div>
+        <div class="stat-label" data-lang="fr">Étapes intégrées</div>
+        <div class="stat-label" data-lang="en">Integrated steps</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-lang="fr">4</div>
+        <div class="stat-number" data-lang="en">4</div>
+        <div class="stat-label" data-lang="fr">Types d'éléments</div>
+        <div class="stat-label" data-lang="en">Element types</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-lang="fr">100%</div>
+        <div class="stat-number" data-lang="en">100%</div>
+        <div class="stat-label" data-lang="fr">Web — rien à installer</div>
+        <div class="stat-label" data-lang="en">Web — nothing to install</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-lang="fr">0</div>
+        <div class="stat-number" data-lang="en">0</div>
+        <div class="stat-label" data-lang="fr">Dessin requis</div>
+        <div class="stat-label" data-lang="en">Drawing required</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 4. SCÉNARIO ======== -->
+<section id="scenario" class="feature-section">
+  <div class="container">
+    <div class="feature-row reveal">
+      <div class="feature-text">
+        <span class="section-label" data-lang="fr">Étape 1</span>
+        <span class="section-label" data-lang="en">Step 1</span>
+        <h2 data-lang="fr">Vos scénarios prennent vie</h2>
+        <h2 data-lang="en">Your scripts come alive</h2>
+        <p class="lead" data-lang="fr">Glissez un fichier ODF, et Alta le transforme instantanément en un lecteur structuré. Chaque réplique, chaque action, chaque didascalie — organisée et accessible.</p>
+        <p class="lead" data-lang="en">Drop an ODF file, and Alta instantly transforms it into a structured reader. Every line, every action, every stage direction — organised and accessible.</p>
+        <ul class="feature-list accent-teal">
+          <li data-lang="fr">Import drag & drop de fichiers ODF (LibreOffice / OpenOffice)</li>
+          <li data-lang="en">Drag & drop import of ODF files (LibreOffice / OpenOffice)</li>
+          <li data-lang="fr">Lecteur en 3 colonnes : action, dialogue, didascalie — navigation instantanée</li>
+          <li data-lang="en">3-column reader: action, dialogue, stage direction — instant navigation</li>
+          <li data-lang="fr">Annotation manuelle ou assistée par IA — repérez chaque élément en un clic</li>
+          <li data-lang="en">Manual or AI-assisted annotation — spot every element in one click</li>
+          <li data-lang="fr">Grille croisée éléments × séquences : la vision globale de votre épisode</li>
+          <li data-lang="en">Cross-reference grid: elements × sequences — the full picture of your episode</li>
+        </ul>
+      </div>
+      <div class="feature-visual screenshot-glow glow-teal">
+        <img src="img/scenario.png" alt="Lecteur de scénario" class="screenshot">
+        <img src="img/anim_annotation.gif" alt="Annotation IA" class="screenshot inset-screenshot">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 5. ÉLÉMENTS ======== -->
+<section id="elements" class="feature-section">
+  <div class="container">
+    <div class="feature-row reversed reveal">
+      <div class="feature-text">
+        <span class="section-label" data-lang="fr">Étape 2</span>
+        <span class="section-label" data-lang="en">Step 2</span>
+        <h2 data-lang="fr">Chaque élément à sa place</h2>
+        <h2 data-lang="en">Every element in its place</h2>
+        <p class="lead" data-lang="fr">Personnages, décors, accessoires, effets spéciaux — chaque composant de votre univers est catalogué, coloré, et prêt à être glissé dans la scène 3D.</p>
+        <p class="lead" data-lang="en">Characters, sets, props, special effects — every component of your universe is catalogued, colour-coded, and ready to be dragged into the 3D scene.</p>
+        <ul class="feature-list accent-violet">
+          <li data-lang="fr">4 types avec badges colorés : identification visuelle instantanée</li>
+          <li data-lang="en">4 types with colour badges: instant visual identification</li>
+          <li data-lang="fr">Arborescence hiérarchique : variantes, sous-éléments, héritage</li>
+          <li data-lang="en">Hierarchical tree: variants, sub-elements, inheritance</li>
+          <li data-lang="fr">Fiches détaillées : description, modèles 3D, textures, dimensions</li>
+          <li data-lang="en">Detailed cards: description, 3D models, textures, dimensions</li>
+          <li data-lang="fr">Lien direct avec le scénario — chaque élément sait dans quelles séquences il apparaît</li>
+          <li data-lang="en">Direct link to the script — every element knows which sequences it appears in</li>
+        </ul>
+      </div>
+      <div class="feature-visual screenshot-glow glow-violet">
+        <img src="img/elements.png" alt="Liste des éléments" class="screenshot">
+        <img src="img/elements_tree.png" alt="Arborescence" class="screenshot inset-screenshot inset-screenshot-left">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 6. STORYBOARD 3D ======== -->
+<section id="storyboard" class="storyboard-section">
+  <div class="container-wide">
+    <div class="storyboard-header reveal">
+      <span class="section-label" data-lang="fr">Étape 3 — La pièce maîtresse</span>
+      <span class="section-label" data-lang="en">Step 3 — The centrepiece</span>
+      <h2 class="section-title" data-lang="fr">Composez vos plans en 3D</h2>
+      <h2 class="section-title" data-lang="en">Compose your shots in 3D</h2>
+      <p class="section-subtitle centered" data-lang="fr">Plus besoin de dessiner. Placez vos personnages, orientez votre caméra, ajustez la pose — et capturez le plan parfait. Le tout dans votre navigateur.</p>
+      <p class="section-subtitle centered" data-lang="en">No drawing needed. Place your characters, orient your camera, adjust the pose — and capture the perfect shot. All in your browser.</p>
+    </div>
+
+    <div class="storyboard-hero reveal">
+      <img src="img/board.png" alt="Board 3D" class="screenshot" style="width: 100%; border-radius: 12px;">
+    </div>
+
+    <div class="container">
+      <div class="filmstrip reveal">
+        <div class="filmstrip-item">
+          <img src="img/board_sequencer.png" alt="Séquenceur" class="screenshot">
+          <p class="filmstrip-caption" data-lang="fr">Séquenceur de plans</p>
+          <p class="filmstrip-caption" data-lang="en">Shot sequencer</p>
+        </div>
+        <div class="filmstrip-item">
+          <img src="img/anim_mannequin.gif" alt="Mannequin posé" class="screenshot">
+          <p class="filmstrip-caption" data-lang="fr">Mannequins articulés</p>
+          <p class="filmstrip-caption" data-lang="en">Articulated mannequins</p>
+        </div>
+        <div class="filmstrip-item" style="position: relative;">
+          <img src="img/board_sidebar.png" alt="Sidebar du board" class="screenshot">
+          <img src="img/anim_inventory_drag.gif" alt="Drag inventaire" class="screenshot inset-screenshot">
+          <p class="filmstrip-caption" data-lang="fr">Inventaire et drag & drop</p>
+          <p class="filmstrip-caption" data-lang="en">Inventory and drag & drop</p>
+        </div>
+        <div class="filmstrip-item">
+          <img src="img/board_mannequin_pose.png" alt="Pose de mannequin" class="screenshot">
+          <p class="filmstrip-caption" data-lang="fr">Contrôle de pose</p>
+          <p class="filmstrip-caption" data-lang="en">Pose control</p>
+        </div>
+      </div>
+
+      <div class="feature-grid reveal">
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#129516;</div>
+          <h4 data-lang="fr">Mannequins articulés</h4>
+          <h4 data-lang="en">Articulated mannequins</h4>
+          <p data-lang="fr">Placez et posez des mannequins pour chaque personnage. Chaque articulation est contrôlable.</p>
+          <p data-lang="en">Place and pose mannequins for each character. Every joint is controllable.</p>
+        </div>
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#128131;</div>
+          <h4 data-lang="fr">Bibliothèque de poses</h4>
+          <h4 data-lang="en">Pose library</h4>
+          <p data-lang="fr">Sauvegardez et réappliquez des poses en un clic. Construisez votre bibliothèque au fil du temps.</p>
+          <p data-lang="en">Save and reapply poses in one click. Build your library over time.</p>
+        </div>
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#127909;</div>
+          <h4 data-lang="fr">Caméra libre</h4>
+          <h4 data-lang="en">Free camera</h4>
+          <p data-lang="fr">FOV ajustable, rotation orbitale, safe zones TV. Trouvez le cadrage parfait.</p>
+          <p data-lang="en">Adjustable FOV, orbital rotation, TV safe zones. Find the perfect framing.</p>
+        </div>
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#127902;</div>
+          <h4 data-lang="fr">Séquenceur visuel</h4>
+          <h4 data-lang="en">Visual sequencer</h4>
+          <p data-lang="fr">Timeline en vignettes pour organiser, réordonner et naviguer entre vos plans.</p>
+          <p data-lang="en">Thumbnail timeline to organise, reorder, and navigate between your shots.</p>
+        </div>
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#8634;</div>
+          <h4 data-lang="fr">Undo / Redo illimité</h4>
+          <h4 data-lang="en">Unlimited undo / redo</h4>
+          <p data-lang="fr">Expérimentez sans risque. Chaque action est réversible, sans limite.</p>
+          <p data-lang="en">Experiment fearlessly. Every action is reversible, with no limit.</p>
+        </div>
+        <div class="feature-grid-item">
+          <div class="feature-grid-icon">&#128230;</div>
+          <h4 data-lang="fr">Drag & drop inventaire</h4>
+          <h4 data-lang="en">Inventory drag & drop</h4>
+          <p data-lang="fr">Glissez décors, accessoires et personnages depuis l'inventaire vers la scène 3D.</p>
+          <p data-lang="en">Drag sets, props, and characters from the inventory into the 3D scene.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 7. WORKFLOW ======== -->
+<section id="workflow">
+  <div class="container pipeline-section">
+    <div class="reveal">
+      <span class="section-label">Pipeline</span>
+      <h2 class="section-title" data-lang="fr">Chaque étape alimente la suivante</h2>
+      <h2 class="section-title" data-lang="en">Each step feeds the next</h2>
+      <p class="section-subtitle centered" data-lang="fr">Pas de copier-coller, pas d'export-import, pas de ressaisie. Les données circulent naturellement d'un bout à l'autre de la chaîne.</p>
+      <p class="section-subtitle centered" data-lang="en">No copy-pasting, no export-import, no re-entry. Data flows naturally from one end of the chain to the other.</p>
+    </div>
+
+    <div class="pipeline">
+      <div class="pipeline-node node-scenario">
+        <h4 data-lang="fr">Import ODF</h4>
+        <h4 data-lang="en">ODF Import</h4>
+        <p data-lang="fr">Scénario structuré</p>
+        <p data-lang="en">Structured script</p>
+      </div>
+      <div class="pipeline-arrow">&rarr;</div>
+      <div class="pipeline-node node-depouil">
+        <h4 data-lang="fr">Dépouillement IA</h4>
+        <h4 data-lang="en">AI Breakdown</h4>
+        <p data-lang="fr">Annotation automatique</p>
+        <p data-lang="en">Automatic annotation</p>
+      </div>
+      <div class="pipeline-arrow">&rarr;</div>
+      <div class="pipeline-node node-board">
+        <h4 data-lang="fr">Storyboard 3D</h4>
+        <h4 data-lang="en">3D Storyboard</h4>
+        <p data-lang="fr">Composition de plans</p>
+        <p data-lang="en">Shot composition</p>
+      </div>
+    </div>
+
+    <div class="pipeline-screenshot reveal" style="text-align: center;">
+      <img src="img/grid.png" alt="Grille de dépouillement" class="screenshot" style="display: inline-block; max-width: 1000px;">
+    </div>
+  </div>
+</section>
+
+<!-- ======== 8. TECHNOLOGIE & CRÉDIBILITÉ ======== -->
+<section id="tech">
+  <div class="container tech-section">
+    <div class="reveal">
+      <span class="section-label" data-lang="fr">Technologie</span>
+      <span class="section-label" data-lang="en">Technology</span>
+      <h2 class="section-title" data-lang="fr">Forgé en studio. Réimaginé pour le web.</h2>
+      <h2 class="section-title" data-lang="en">Forged in the studio. Reimagined for the web.</h2>
+      <p class="tech-statement" data-lang="fr">
+        Né de plusieurs années d'usage quotidien en studio d'animation professionnel, Alta a été entièrement réécrit avec les technologies modernes du web. Le résultat : un outil rapide, fiable, accessible depuis n'importe quel navigateur.
+      </p>
+      <p class="tech-statement" data-lang="en">
+        Born from years of daily use in a professional animation studio, Alta has been entirely rewritten with modern web technologies. The result: a fast, reliable tool accessible from any browser.
+      </p>
+    </div>
+    <div class="tech-pills reveal">
+      <span class="tech-pill">Rails 8</span>
+      <span class="tech-pill">Three.js</span>
+      <span class="tech-pill">Gemini AI</span>
+      <span class="tech-pill">Bootstrap 5</span>
+      <span class="tech-pill">Stimulus</span>
+      <span class="tech-pill">Tiptap</span>
+      <span class="tech-pill">WebGL</span>
+      <span class="tech-pill">Solid Queue</span>
+    </div>
+    <div class="tech-details reveal">
+      <div class="tech-detail">
+        <h4 data-lang="fr">Rendu 3D temps réel</h4>
+        <h4 data-lang="en">Real-time 3D rendering</h4>
+        <p data-lang="fr">Three.js + WebGL pour un storyboard 3D fluide directement dans le navigateur, sans plugin.</p>
+        <p data-lang="en">Three.js + WebGL for a smooth 3D storyboard directly in the browser, no plugin needed.</p>
+      </div>
+      <div class="tech-detail">
+        <h4 data-lang="fr">IA intégrée</h4>
+        <h4 data-lang="en">Integrated AI</h4>
+        <p data-lang="fr">Gemini analyse le scénario et identifie automatiquement les éléments — personnages, décors, accessoires, FX.</p>
+        <p data-lang="en">Gemini analyses the script and automatically identifies elements — characters, sets, props, FX.</p>
+      </div>
+      <div class="tech-detail">
+        <h4 data-lang="fr">100% web</h4>
+        <h4 data-lang="en">100% web</h4>
+        <p data-lang="fr">Aucune installation. Un navigateur suffit. Données centralisées, collaboration naturelle.</p>
+        <p data-lang="en">No installation. A browser is all you need. Centralised data, natural collaboration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 9. CTA FINAL ======== -->
+<section class="cta-section">
+  <div class="container reveal">
+    <h2 class="section-title" data-lang="fr">Bientôt disponible.</h2>
+    <h2 class="section-title" data-lang="en">Coming soon.</h2>
+    <div class="cta-buttons">
+      <a href="#hero" class="hero-cta hero-cta-secondary" data-lang="fr">Retour en haut</a>
+      <a href="#hero" class="hero-cta hero-cta-secondary" data-lang="en">Back to top</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer class="footer">
+  <div class="footer-brand">ALTA</div>
+  <div class="footer-links">
+  </div>
+  <div class="lang-toggle" style="display: inline-flex; margin-bottom: 1rem;">
+    <button data-set-lang="fr">FR</button>
+    <button data-set-lang="en">EN</button>
+  </div>
+  <p class="footer-copy">&copy; 2026 Alta. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights reserved.</span></p>
+</footer>
+
+<script src="js/landing.js"></script>
+</body>
+</html>
