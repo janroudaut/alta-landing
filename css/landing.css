@@ -611,10 +611,6 @@ section:nth-child(even) {
   position: relative;
 }
 
-.feature-text .section-label {
-  display: block;
-}
-
 .feature-text h2 {
   font-size: 2.2rem;
   font-weight: 800;
