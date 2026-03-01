@@ -21,6 +21,7 @@
       <li><a href="#elements" data-lang="fr">Éléments</a><a href="#elements" data-lang="en">Elements</a></li>
       <li><a href="#storyboard">Storyboard</a></li>
       <li><a href="#workflow" data-lang="fr">Pipeline</a><a href="#workflow" data-lang="en">Pipeline</a></li>
+      <li><a href="#openness" data-lang="fr">Ouverture</a><a href="#openness" data-lang="en">Openness</a></li>
       <li><a href="#tech" data-lang="fr">Technologie</a><a href="#tech" data-lang="en">Technology</a></li>
     </ul>
   </div>
@@ -164,8 +165,8 @@
         </svg>
         <h3 data-lang="fr">Dépouillement IA</h3>
         <h3 data-lang="en">AI breakdown</h3>
-        <p data-lang="fr">L'IA analyse chaque séquence et identifie automatiquement personnages, décors, accessoires et effets spéciaux.</p>
-        <p data-lang="en">AI analyses each sequence and automatically identifies characters, sets, props, and special effects.</p>
+        <p data-lang="fr">L'IA analyse chaque séquence et identifie automatiquement personnages, décors, accessoires…</p>
+        <p data-lang="en">AI analyses each sequence and automatically identifies characters, sets, props…</p>
       </div>
       <!-- Storyboard -->
       <div class="value-card">
@@ -195,10 +196,10 @@
         <div class="stat-label" data-lang="en">Integrated steps</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-lang="fr">4</div>
-        <div class="stat-number" data-lang="en">4</div>
-        <div class="stat-label" data-lang="fr">Types d'éléments</div>
-        <div class="stat-label" data-lang="en">Element types</div>
+        <div class="stat-number stat-number-text" data-lang="fr"><span class="c-teal">BG</span> · <span class="c-violet">Persos</span><br><span class="c-blue">Props</span> · …</div>
+        <div class="stat-number stat-number-text" data-lang="en"><span class="c-teal">BG</span> · <span class="c-violet">Chars</span><br><span class="c-blue">Props</span> · …</div>
+        <div class="stat-label" data-lang="fr">Tous vos assets</div>
+        <div class="stat-label" data-lang="en">All your assets</div>
       </div>
       <div class="stat-item">
         <div class="stat-number" data-lang="fr">100%</div>
@@ -255,8 +256,8 @@
         <span class="section-label" data-lang="en">Step 2</span>
         <h2 data-lang="fr">Chaque élément à sa place</h2>
         <h2 data-lang="en">Every element in its place</h2>
-        <p class="lead" data-lang="fr">Personnages, décors, accessoires, effets spéciaux — chaque composant de votre univers est catalogué, coloré, et prêt à être glissé dans la scène 3D.</p>
-        <p class="lead" data-lang="en">Characters, sets, props, special effects — every component of your universe is catalogued, colour-coded, and ready to be dragged into the 3D scene.</p>
+        <p class="lead" data-lang="fr">Personnages, décors, accessoires… chaque composant de votre univers est catalogué, coloré, et prêt à être glissé dans la scène 3D.</p>
+        <p class="lead" data-lang="en">Characters, sets, props… every component of your universe is catalogued, colour-coded, and ready to be dragged into the 3D scene.</p>
         <ul class="feature-list accent-violet">
           <li data-lang="fr">4 types avec badges colorés : identification visuelle instantanée</li>
           <li data-lang="en">4 types with colour badges: instant visual identification</li>
@@ -370,13 +371,20 @@
   <div class="container pipeline-section">
     <div class="reveal">
       <span class="section-label">Pipeline</span>
-      <h2 class="section-title" data-lang="fr">Chaque étape alimente la suivante</h2>
-      <h2 class="section-title" data-lang="en">Each step feeds the next</h2>
-      <p class="section-subtitle centered" data-lang="fr">Pas de copier-coller, pas d'export-import, pas de ressaisie. Les données circulent naturellement d'un bout à l'autre de la chaîne.</p>
-      <p class="section-subtitle centered" data-lang="en">No copy-pasting, no export-import, no re-entry. Data flows naturally from one end of the chain to the other.</p>
+      <h2 class="section-title" data-lang="fr">Alta s'intègre dans votre pipeline</h2>
+      <h2 class="section-title" data-lang="en">Alta fits into your pipeline</h2>
+      <p class="section-subtitle centered" data-lang="fr">En amont, agrégez vos assets existants. En aval, exportez en formats ouverts. Alta est un maillon de votre pipeline, pas un silo.</p>
+      <p class="section-subtitle centered" data-lang="en">Upstream, aggregate your existing assets. Downstream, export in open formats. Alta is a link in your pipeline, not a silo.</p>
     </div>
 
     <div class="pipeline">
+      <div class="pipeline-node node-upstream">
+        <h4 data-lang="fr">En amont</h4>
+        <h4 data-lang="en">Upstream</h4>
+        <p data-lang="fr">Vos assets existants</p>
+        <p data-lang="en">Your existing assets</p>
+      </div>
+      <div class="pipeline-arrow">&rarr;</div>
       <div class="pipeline-node node-scenario">
         <h4 data-lang="fr">Import ODF</h4>
         <h4 data-lang="en">ODF Import</h4>
@@ -397,11 +405,81 @@
         <p data-lang="fr">Composition de plans</p>
         <p data-lang="en">Shot composition</p>
       </div>
+      <div class="pipeline-arrow">&rarr;</div>
+      <div class="pipeline-node node-downstream">
+        <h4 data-lang="fr">En aval</h4>
+        <h4 data-lang="en">Downstream</h4>
+        <p data-lang="fr">Formats ouverts</p>
+        <p data-lang="en">Open formats</p>
+        <span class="node-formats">glTF · JSON · PNG</span>
+      </div>
     </div>
 
     <div class="pipeline-screenshot reveal" style="text-align: center;">
       <img src="img/grid.png" alt="Grille de dépouillement" class="screenshot" style="display: inline-block; max-width: 1000px;">
     </div>
+  </div>
+</section>
+
+<!-- ======== 7b. OUVERTURE & ASSETS ======== -->
+<section id="openness">
+  <div class="container">
+    <div style="text-align: center;" class="reveal">
+      <span class="section-label" data-lang="fr">Ouverture</span>
+      <span class="section-label" data-lang="en">Openness</span>
+      <h2 class="section-title" data-lang="fr">Vos assets. Votre pipeline.</h2>
+      <h2 class="section-title" data-lang="en">Your assets. Your pipeline.</h2>
+    </div>
+
+    <div class="openness-grid reveal">
+      <!-- Bloc 1 — Gestionnaire d'assets -->
+      <div class="openness-card">
+        <div class="openness-icon">&#128218;</div>
+        <h3 data-lang="fr">Gestionnaire d'assets sur mesure</h3>
+        <h3 data-lang="en">Purpose-built asset manager</h3>
+        <ul class="feature-list accent-green">
+          <li data-lang="fr">Catalogue structuré : personnages, décors, accessoires…</li>
+          <li data-lang="en">Structured catalogue: characters, sets, props…</li>
+          <li data-lang="fr">Multi-versions : chaque asset peut avoir des variantes et un historique</li>
+          <li data-lang="en">Multi-version: each asset can have variants and a history</li>
+          <li data-lang="fr">Fiches détaillées : description, modèles 3D, textures, dimensions</li>
+          <li data-lang="en">Detailed cards: description, 3D models, textures, dimensions</li>
+          <li data-lang="fr">Conçu spécifiquement pour la préprod animation</li>
+          <li data-lang="en">Designed specifically for animation pre-production</li>
+        </ul>
+      </div>
+      <!-- Bloc 2 — Agrégez votre pipeline -->
+      <div class="openness-card">
+        <div class="openness-icon">&#128268;</div>
+        <h3 data-lang="fr">Agrégez votre pipeline existant</h3>
+        <h3 data-lang="en">Aggregate your existing pipeline</h3>
+        <ul class="feature-list accent-green">
+          <li data-lang="fr">Importez vos modèles 3D, textures, éléments existants</li>
+          <li data-lang="en">Import your existing 3D models, textures, and elements</li>
+          <li data-lang="fr">Constituez votre base d'assets depuis votre pipeline actuel</li>
+          <li data-lang="en">Build your asset base from your current pipeline</li>
+          <li data-lang="fr">Alta s'adapte à votre workflow, pas l'inverse</li>
+          <li data-lang="en">Alta adapts to your workflow, not the other way around</li>
+        </ul>
+      </div>
+      <!-- Bloc 3 — Formats ouverts -->
+      <div class="openness-card">
+        <div class="openness-icon">&#128275;</div>
+        <h3 data-lang="fr">Formats ouverts, zéro lock-in</h3>
+        <h3 data-lang="en">Open formats, zero lock-in</h3>
+        <ul class="feature-list accent-green">
+          <li data-lang="fr">Export en formats standards (glTF, JSON, PNG…)</li>
+          <li data-lang="en">Export in standard formats (glTF, JSON, PNG…)</li>
+          <li data-lang="fr">Vos données vous appartiennent, toujours exportables</li>
+          <li data-lang="en">Your data belongs to you, always exportable</li>
+          <li data-lang="fr">Aucune dépendance propriétaire</li>
+          <li data-lang="en">No proprietary dependency</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="openness-synthesis reveal" data-lang="fr">Alta est un maillon de votre pipeline, pas un silo.</p>
+    <p class="openness-synthesis reveal" data-lang="en">Alta is a link in your pipeline, not a silo.</p>
   </div>
 </section>
 
@@ -440,8 +518,8 @@
       <div class="tech-detail">
         <h4 data-lang="fr">IA intégrée</h4>
         <h4 data-lang="en">Integrated AI</h4>
-        <p data-lang="fr">Gemini analyse le scénario et identifie automatiquement les éléments — personnages, décors, accessoires, FX.</p>
-        <p data-lang="en">Gemini analyses the script and automatically identifies elements — characters, sets, props, FX.</p>
+        <p data-lang="fr">Gemini analyse le scénario et identifie automatiquement les éléments — personnages, décors, accessoires…</p>
+        <p data-lang="en">Gemini analyses the script and automatically identifies elements — characters, sets, props…</p>
       </div>
       <div class="tech-detail">
         <h4 data-lang="fr">100% web</h4>

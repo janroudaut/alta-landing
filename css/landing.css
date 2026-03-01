@@ -555,6 +555,10 @@ section:nth-child(even) {
 
 .stat-item {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .stat-number {
@@ -564,6 +568,17 @@ section:nth-child(even) {
   margin-bottom: 0.4rem;
   font-variant-numeric: tabular-nums;
 }
+
+.stat-number.stat-number-text {
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.c-teal { color: var(--teal); }
+.c-violet { color: var(--violet); }
+.c-blue { color: var(--blue); }
+.c-orange { color: var(--red-orange); }
 
 .stat-label {
   font-size: 0.85rem;
@@ -757,16 +772,18 @@ section:nth-child(even) {
   justify-content: center;
   gap: 0;
   margin-bottom: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .pipeline-node {
-  padding: 1.5rem 2.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 12px;
   background: var(--surface);
   border: 1px solid var(--border);
   text-align: center;
-  min-width: 200px;
+  min-width: 0;
+  flex: 1 1 0;
+  max-width: 200px;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -791,10 +808,27 @@ section:nth-child(even) {
 .pipeline-node.node-depouil { border-top: 3px solid var(--violet); }
 .pipeline-node.node-board { border-top: 3px solid var(--blue); }
 
+.pipeline-node.node-upstream,
+.pipeline-node.node-downstream {
+  border: 2px dashed var(--green);
+  border-top: 3px dashed var(--green);
+  background: rgba(81, 207, 102, 0.04);
+}
+
+.node-formats {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--green);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
 .pipeline-arrow {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: var(--text-muted);
-  padding: 0 1.25rem;
+  padding: 0 0.75rem;
+  flex-shrink: 0;
 }
 
 .pipeline-screenshot {
@@ -810,6 +844,62 @@ section:nth-child(even) {
   z-index: 0;
   pointer-events: none;
 }
+
+/* --- Openness section --- */
+.openness-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.openness-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.openness-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--green);
+}
+
+.openness-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+}
+
+.openness-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.openness-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.openness-synthesis {
+  text-align: center;
+  font-size: 1.35rem;
+  color: var(--text-body);
+  max-width: 750px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.feature-list.accent-green li::before { background: var(--green); }
 
 /* --- Tech section --- */
 .tech-section {
@@ -1007,7 +1097,8 @@ html[lang="en"] a[data-lang="en"] { display: inline; }
   .feature-grid,
   .problem-grid,
   .stats-row,
-  .tech-details {
+  .tech-details,
+  .openness-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1017,10 +1108,17 @@ html[lang="en"] a[data-lang="en"] { display: inline; }
 
   .pipeline {
     flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .pipeline-node {
+    max-width: none;
+    width: 100%;
   }
 
   .pipeline-arrow {
     transform: rotate(90deg);
+    padding: 0.5rem 0;
   }
 
   .pipeline-arrow.visible {
