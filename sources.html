@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALTA — Sources et détails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+  <style>
+    .sources-page { padding: 6rem 2rem 4rem; }
+    .sources-page h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    .sources-page .intro { color: var(--text-muted); margin-bottom: 3rem; font-size: 1.05rem; }
+    .source-block { margin-bottom: 3rem; padding: 2rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+    .source-block h2 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .source-block h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+    .source-block p, .source-block li { font-size: 0.95rem; line-height: 1.7; color: var(--text-body); }
+    .source-block ul { padding-left: 1.5rem; }
+    .claim { font-weight: 600; color: var(--text-title); }
+    .cost-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .cost-table th, .cost-table td { padding: 0.6rem 1rem; text-align: center; border-bottom: 1px solid var(--border); }
+    .cost-table th:first-child, .cost-table td:first-child { text-align: left; }
+    .cost-table th { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .cost-table td:last-child { font-variant-numeric: tabular-nums; }
+    .cost-table tfoot td { font-weight: 700; color: var(--text-title); border-top: 2px solid var(--border); }
+    .cost-table .source-link { font-size: 0.8rem; color: var(--text-muted); }
+    .back-link { display: inline-block; margin-bottom: 2rem; font-weight: 600; font-size: 0.9rem; }
+    .note { font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="navbar-left">
+    <a href="index.html" class="navbar-brand">ALTA</a>
+  </div>
+  <div class="navbar-right">
+    <div class="lang-toggle">
+      <button data-set-lang="fr">FR</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container sources-page">
+
+  <a href="index.html" class="back-link" data-lang="fr">&larr; Retour</a>
+  <a href="index.html" class="back-link" data-lang="en">&larr; Back</a>
+
+  <h1 data-lang="fr">Sources et détails</h1>
+  <h1 data-lang="en">Sources and details</h1>
+  <p class="intro" data-lang="fr">Chaque chiffre mentionné sur la page principale est détaillé ici avec ses sources. Dernière mise à jour : mars 2026.</p>
+  <p class="intro" data-lang="en">Every figure mentioned on the main page is detailed here with its sources. Last updated: March 2026.</p>
+
+  <!-- ====== COÛT DES OUTILS ====== -->
+  <div class="source-block" id="cost-breakdown">
+    <h2 data-lang="fr">Coût des outils : 1 000 à 2 000 EUR/mois</h2>
+    <h2 data-lang="en">Tool costs: EUR 1,000–2,000/month</h2>
+
+    <p data-lang="fr">Estimation pour un studio d'animation TV de 10 à 30 personnes utilisant les outils standard du marché. Deux scénarios typiques :</p>
+    <p data-lang="en">Estimate for a 10–30 person TV animation studio using standard market tools. Two typical scenarios:</p>
+
+    <h3 data-lang="fr">Scénario A — Studio mid-size (15 postes de préprod)</h3>
+    <h3 data-lang="en">Scenario A — Mid-size studio (15 pre-production seats)</h3>
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th data-lang="fr">Outil</th><th data-lang="en">Tool</th>
+          <th data-lang="fr">Tarif public</th><th data-lang="en">Public price</th>
+          <th data-lang="fr">Postes</th><th data-lang="en">Seats</th>
+          <th data-lang="fr">Coût/mois</th><th data-lang="en">Cost/month</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Storyboard Pro <span class="source-link">(<a href="https://shop.toonboom.com/en/subscriptions/storyboard-pro">source</a>)</span></td>
+          <td>794 EUR/an (~66 EUR/mois)</td>
+          <td>5</td>
+          <td>330 EUR</td>
+        </tr>
+        <tr>
+          <td>Toon Boom Producer <span class="source-link">(<a href="https://www.toonboom.com/products/producer">source</a>)</span></td>
+          <td data-lang="fr">À partir de 350 USD/mois (~325 EUR)</td>
+          <td data-lang="en">From 350 USD/month (~325 EUR)</td>
+          <td>1 (studio)</td>
+          <td>325 EUR</td>
+        </tr>
+        <tr>
+          <td>Autodesk Flow (ex-ShotGrid) <span class="source-link">(<a href="https://www.autodesk.com/products/flow-production-tracking/overview">source</a>)</span></td>
+          <td>~40 USD/user/mois (~37 EUR)</td>
+          <td>15</td>
+          <td>555 EUR</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" data-lang="fr">Total mensuel estimé</td>
+          <td colspan="3" data-lang="en">Estimated monthly total</td>
+          <td>~1 210 EUR</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3 data-lang="fr">Scénario B — Studio plus large (25 postes)</h3>
+    <h3 data-lang="en">Scenario B — Larger studio (25 seats)</h3>
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th data-lang="fr">Outil</th><th data-lang="en">Tool</th>
+          <th data-lang="fr">Tarif</th><th data-lang="en">Price</th>
+          <th data-lang="fr">Postes</th><th data-lang="en">Seats</th>
+          <th data-lang="fr">Coût/mois</th><th data-lang="en">Cost/month</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Storyboard Pro</td>
+          <td>66 EUR/mois/poste</td>
+          <td>8</td>
+          <td>528 EUR</td>
+        </tr>
+        <tr>
+          <td>Toon Boom Producer</td>
+          <td>350+ USD/mois</td>
+          <td>1</td>
+          <td>325 EUR</td>
+        </tr>
+        <tr>
+          <td>Autodesk Flow</td>
+          <td>37 EUR/user/mois</td>
+          <td>25</td>
+          <td>925 EUR</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" data-lang="fr">Total mensuel estimé</td>
+          <td colspan="3" data-lang="en">Estimated monthly total</td>
+          <td>~1 778 EUR</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p class="note" data-lang="fr">Les tarifs sont les prix publics constatés en mars 2026. Les studios peuvent obtenir des remises volume. Taux de conversion USD/EUR approximatif : 0,93. Les outils complémentaires (Photoshop, Premiere, etc.) ne sont pas inclus.</p>
+    <p class="note" data-lang="en">Prices are public list prices as of March 2026. Studios may negotiate volume discounts. Approximate USD/EUR rate: 0.93. Complementary tools (Photoshop, Premiere, etc.) are not included.</p>
+  </div>
+
+  <!-- ====== 3 À 5 OUTILS ====== -->
+  <div class="source-block" id="tool-fragmentation">
+    <h2 data-lang="fr">3 à 5 outils non connectés</h2>
+    <h2 data-lang="en">3 to 5 disconnected tools</h2>
+
+    <p data-lang="fr">Workflow typique observé dans les studios d'animation TV :</p>
+    <p data-lang="en">Typical workflow observed in TV animation studios:</p>
+    <ul>
+      <li data-lang="fr"><strong>Scénario :</strong> Word, LibreOffice, Final Draft, ou Celtx</li>
+      <li data-lang="en"><strong>Script:</strong> Word, LibreOffice, Final Draft, or Celtx</li>
+      <li data-lang="fr"><strong>Dépouillement :</strong> Excel, Google Sheets, ou papier</li>
+      <li data-lang="en"><strong>Breakdown:</strong> Excel, Google Sheets, or paper</li>
+      <li data-lang="fr"><strong>Storyboard :</strong> Storyboard Pro, Photoshop, Procreate, ou dessin papier</li>
+      <li data-lang="en"><strong>Storyboard:</strong> Storyboard Pro, Photoshop, Procreate, or paper drawing</li>
+      <li data-lang="fr"><strong>Tracking :</strong> ShotGrid/Flow, ftrack, Kitsu, ou Google Sheets</li>
+      <li data-lang="en"><strong>Tracking:</strong> ShotGrid/Flow, ftrack, Kitsu, or Google Sheets</li>
+      <li data-lang="fr"><strong>Export/validation :</strong> InDesign, PowerPoint, ou export SBP</li>
+      <li data-lang="en"><strong>Export/review:</strong> InDesign, PowerPoint, or SBP export</li>
+    </ul>
+    <p class="note" data-lang="fr">Basé sur les pratiques observées en studio et sur l'enquête StoryTribe (cf. ci-dessous). Aucun outil intégré ne couvre nativement les trois premières étapes pour l'animation.</p>
+    <p class="note" data-lang="en">Based on observed studio practices and the StoryTribe survey (see below). No integrated tool natively covers the first three steps for animation.</p>
+  </div>
+
+  <!-- ====== MOINS DE 3% ====== -->
+  <div class="source-block" id="storyboard-adoption">
+    <h2 data-lang="fr">Moins de 3 % utilisent un outil dédié</h2>
+    <h2 data-lang="en">Less than 3% use a dedicated tool</h2>
+
+    <p data-lang="fr">Chiffre issu de l'enquête menée par <a href="https://storytribeapp.com/blog/closing-the-gap-in-storyboarding-tools">StoryTribe</a> auprès de 330 créateurs. La majorité utilise des outils généralistes (Procreate, Photoshop, Canva, Google Slides) plutôt que des outils de storyboard dédiés.</p>
+    <p data-lang="en">Figure from a <a href="https://storytribeapp.com/blog/closing-the-gap-in-storyboarding-tools">StoryTribe survey</a> of 330 creators. The majority use generalist tools (Procreate, Photoshop, Canva, Google Slides) rather than dedicated storyboarding tools.</p>
+    <p class="note" data-lang="fr">Limite : l'enquête couvre un panel large (pas uniquement l'animation TV professionnelle). Le chiffre reflète la fragmentation générale des outils de storyboard.</p>
+    <p class="note" data-lang="en">Caveat: the survey covers a broad panel (not solely professional TV animation). The figure reflects the general fragmentation of storyboarding tools.</p>
+  </div>
+
+  <!-- ====== 1 À 2 JOURS ====== -->
+  <div class="source-block" id="breakdown-duration">
+    <h2 data-lang="fr">Dépouillement manuel : 1 à 2 jours par épisode</h2>
+    <h2 data-lang="en">Manual breakdown: 1 to 2 days per episode</h2>
+
+    <p data-lang="fr">Estimation basée sur l'expérience terrain en studio d'animation professionnel (le contexte d'origine d'Alta). Un épisode de série TV animation comprend typiquement 20 à 40 séquences. Le dépouillement consiste à relire chaque séquence, identifier les personnages physiquement présents, les décors, les accessoires, les effets, puis reporter ces informations dans un tableur ou un outil de tracking.</p>
+    <p data-lang="en">Estimate based on hands-on experience in a professional animation studio (Alta's original context). A TV animation episode typically contains 20 to 40 sequences. Breakdown involves re-reading each sequence, identifying physically present characters, sets, props, effects, then entering this information into a spreadsheet or tracking tool.</p>
+
+    <p data-lang="fr">Par comparaison, les outils de breakdown IA pour le live-action (Filmustage, Studiovity) revendiquent un passage de 3-4 jours à moins d'une heure pour un script de 90 pages (<a href="https://studiovity.com/script-breakdown-software/">source Studiovity</a>). Le dépouillement animation est plus complexe (vocabulaire spécifique, catégories d'assets différentes).</p>
+    <p data-lang="en">For comparison, AI breakdown tools for live-action (Filmustage, Studiovity) claim a reduction from 3-4 days to under an hour for a 90-page script (<a href="https://studiovity.com/script-breakdown-software/">Studiovity source</a>). Animation breakdown is more complex (specific vocabulary, different asset categories).</p>
+
+    <p class="note" data-lang="fr">Le « ~2 min » d'Alta correspond au temps de traitement IA (appels Gemini) pour un épisode de ~26 séquences. Le temps total inclut la vérification humaine des résultats.</p>
+    <p class="note" data-lang="en">Alta's "~2 min" refers to AI processing time (Gemini API calls) for an episode of ~26 sequences. Total time includes human review of results.</p>
+  </div>
+
+  <!-- ====== MARCHÉ 430 Md USD ====== -->
+  <div class="source-block" id="market-size">
+    <h2 data-lang="fr">Marché mondial de l'animation : 430 Md USD</h2>
+    <h2 data-lang="en">Global animation market: USD 430 billion</h2>
+
+    <p data-lang="fr">Les estimations varient selon le périmètre de chaque cabinet d'études :</p>
+    <p data-lang="en">Estimates vary depending on each research firm's scope:</p>
+    <ul>
+      <li><strong>Precedence Research :</strong> 430 Md USD (2025), projection 953 Md USD (2035), TCAC 6,1 % — <a href="https://www.precedenceresearch.com/animation-market">source</a></li>
+      <li><strong>The Business Research Company :</strong> 420,73 Md USD (2025), TCAC 6,9 % — <a href="https://www.thebusinessresearchcompany.com/report/animation-global-market-report">source</a></li>
+      <li><strong>Mordor Intelligence (Animation & VFX) :</strong> 197,3 Md USD (2025) — <a href="https://www.mordorintelligence.com/industry-reports/animation-and-vfx-market">source</a> (périmètre plus restreint)</li>
+    </ul>
+    <p class="note" data-lang="fr">Le chiffre de 430 Md USD (Precedence Research) couvre le marché global de l'animation (production, distribution, services). Le segment spécifique « logiciel de préprod pour l'animation TV » n'est pas isolé dans les rapports publics disponibles.</p>
+    <p class="note" data-lang="en">The USD 430B figure (Precedence Research) covers the global animation market (production, distribution, services). The specific "pre-production software for TV animation" segment is not isolated in available public reports.</p>
+  </div>
+
+  <!-- ====== FRANCE 3e ====== -->
+  <div class="source-block" id="france-3rd">
+    <h2 data-lang="fr">La France, 3<sup>e</sup> producteur mondial d'animation</h2>
+    <h2 data-lang="en">France, 3<sup>rd</sup> largest animation producer</h2>
+
+    <p data-lang="fr">Après les États-Unis et le Japon. L'animation est le 2<sup>e</sup> genre le plus exporté par la France (22 % du marché export audiovisuel, 46,1 M EUR en 2024).</p>
+    <p data-lang="en">After the United States and Japan. Animation is France's 2<sup>nd</sup> most exported audiovisual genre (22% of audiovisual export market share, EUR 46.1M in 2024).</p>
+    <ul>
+      <li data-lang="fr">Rapport annuel CNC 2024 : <a href="https://www.cnc.fr/professionnels/etudes-et-rapports/etudes-prospectives/le-marche-de-lanimation-en-2024_2404566">Le marché de l'animation en 2024</a></li>
+      <li data-lang="en">CNC 2024 annual report: <a href="https://www.cnc.fr/professionnels/etudes-et-rapports/etudes-prospectives/le-marche-de-lanimation-en-2024_2404566">Le marché de l'animation en 2024</a></li>
+      <li data-lang="fr">Récap Les Intervalles : <a href="https://lesintervalles.fr/2025/06/27/recap-du-rapport-annuel-du-cnc-le-marche-de-lanimation-en-2024/">analyse CNC animation 2024</a></li>
+      <li data-lang="en">Les Intervalles recap: <a href="https://lesintervalles.fr/2025/06/27/recap-du-rapport-annuel-du-cnc-le-marche-de-lanimation-en-2024/">CNC animation 2024 analysis</a></li>
+      <li data-lang="fr">AnimFrance fédère 60+ sociétés représentant 90 %+ de l'emploi du secteur : <a href="https://www.filmparisregion.com/en/resource-guide/animfrance-ex-spfa">source</a></li>
+      <li data-lang="en">AnimFrance federates 60+ companies representing 90%+ of sector employment: <a href="https://www.filmparisregion.com/en/resource-guide/animfrance-ex-spfa">source</a></li>
+    </ul>
+  </div>
+
+  <!-- ====== 20-30% PRÉPROD ====== -->
+  <div class="source-block" id="preprod-budget">
+    <h2 data-lang="fr">Pré-production : 20-30 % du budget total</h2>
+    <h2 data-lang="en">Pre-production: 20-30% of total budget</h2>
+
+    <p data-lang="fr">Fourchette communément admise dans l'industrie. La répartition standard est :</p>
+    <p data-lang="en">Commonly accepted range in the industry. The standard split is:</p>
+    <ul>
+      <li data-lang="fr">Pré-production (écriture, storyboard, concept art, direction artistique) : 20-30 %</li>
+      <li data-lang="en">Pre-production (writing, storyboard, concept art, art direction): 20-30%</li>
+      <li data-lang="fr">Production (animation, compositing, layout) : 60-70 %</li>
+      <li data-lang="en">Production (animation, compositing, layout): 60-70%</li>
+      <li data-lang="fr">Post-production (montage, son, export) : 10-15 %</li>
+      <li data-lang="en">Post-production (editing, sound, export): 10-15%</li>
+    </ul>
+    <ul>
+      <li><a href="https://www.animationiconic.com/blog/how-much-does-it-cost-to-make-an-animated-series">Animation Iconic — How much does it cost to make an animated series</a></li>
+      <li><a href="https://arise3d.com/how-much-does-3d-product-animation-cost/">Arise3D — 3D animation cost breakdown</a></li>
+    </ul>
+  </div>
+
+  <!-- ====== CROISSANCE +6% ====== -->
+  <div class="source-block" id="growth-rate">
+    <h2 data-lang="fr">Croissance annuelle : +6 %/an</h2>
+    <h2 data-lang="en">Annual growth: +6%/year</h2>
+
+    <p data-lang="fr">TCAC (taux de croissance annuel composé) du marché mondial de l'animation, selon Precedence Research : 6,1 % sur la période 2025-2035.</p>
+    <p data-lang="en">CAGR (compound annual growth rate) of the global animation market, per Precedence Research: 6.1% over the 2025-2035 period.</p>
+    <ul>
+      <li><a href="https://www.precedenceresearch.com/animation-market">Precedence Research — Animation Market</a></li>
+    </ul>
+    <p class="note" data-lang="fr">Le marché européen croît à un rythme légèrement différent : 5,81 %/an selon <a href="https://www.mordorintelligence.com/industry-reports/europe-animation-vfx-and-post-production-market">Mordor Intelligence</a>.</p>
+    <p class="note" data-lang="en">The European market grows at a slightly different rate: 5.81%/yr per <a href="https://www.mordorintelligence.com/industry-reports/europe-animation-vfx-and-post-production-market">Mordor Intelligence</a>.</p>
+  </div>
+
+  <!-- ====== TABLEAU COMPARATIF ====== -->
+  <div class="source-block" id="comparison">
+    <h2 data-lang="fr">Tableau comparatif — sources</h2>
+    <h2 data-lang="en">Comparison table — sources</h2>
+
+    <p data-lang="fr">Les fonctionnalités listées dans le tableau comparatif sont vérifiables sur les pages produit respectives :</p>
+    <p data-lang="en">Features listed in the comparison table are verifiable on each product's page:</p>
+    <ul>
+      <li><strong>Storyboard Pro</strong> (Toon Boom) — desktop, dessin 2D avec caméra 3D, pas d'import/breakdown de script, pas web-based : <a href="https://www.toonboom.com/products/storyboard-pro">page produit</a></li>
+      <li><strong>Flix</strong> (Foundry) — web-based, hub éditorial, pas d'outils de création propres, pas de breakdown : <a href="https://www.foundry.com/products/flix">page produit</a></li>
+      <li><strong>StudioBinder</strong> — web-based, breakdown IA orienté live-action (costumes, véhicules, cascadeurs — pas de catégories animation) : <a href="https://www.studiobinder.com/script-breakdown-software/">page produit</a></li>
+    </ul>
+    <p class="note" data-lang="fr">Les fonctionnalités « mannequins articulés » et « réutilisation caméra cross-épisodes » sont propres à Alta. Aucun concurrent identifié ne propose ces fonctionnalités à ce jour (mars 2026).</p>
+    <p class="note" data-lang="en">"Articulated mannequins" and "cross-episode camera reuse" are unique to Alta. No identified competitor offers these features as of March 2026.</p>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-brand">ALTA</div>
+  <p class="footer-copy">&copy; 2026 Alta.</p>
+</footer>
+
+<script src="js/landing.js"></script>
+</body>
+</html>

@@ -39,7 +39,7 @@
     if (!navbar) return;
     if (window.scrollY > 60) {
       navbar.classList.add('scrolled');
-    } else {
+    } else if (heroSection) {
       navbar.classList.remove('scrolled');
     }
   }

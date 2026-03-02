@@ -897,6 +897,98 @@ section:nth-child(even) {
 
 .feature-list.accent-green li::before { background: var(--green); }
 
+/* --- Comparison table --- */
+.comparison-table {
+  overflow-x: auto;
+  margin-top: 3rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 600px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table thead th {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 1rem;
+}
+
+.comparison-table td[data-lang],
+.comparison-table th[data-lang] {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-body);
+}
+
+.comparison-table .ct-highlight {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.comparison-table th.ct-highlight {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.comparison-table .ct-yes::before {
+  content: '\2713';
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.comparison-table .ct-no {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.comparison-table .ct-no:empty::before {
+  content: '\2014';
+}
+
+.comparison-table td.ct-partial {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.comparison-table tbody tr {
+  transition: background 0.2s;
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+/* --- Source references --- */
+.source-ref {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  vertical-align: super;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.source-ref:hover {
+  opacity: 1;
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* --- Tech section --- */
 .tech-section {
   text-align: center;
